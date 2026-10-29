@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f4ef">
+<title>for Nurfadhleen ♡</title>
+<style>
+:root{--paper:#f7f4ef;--ink:#292822;--muted:#77746d;--line:#ded9d0;--rose:#9c6c62;--card:#fffdf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+main{width:min(100% - 32px,700px);margin:auto;padding:24px 0 36px}
+.top{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;color:var(--muted);font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+.hero{padding:52px 0 28px}.kicker,.label{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--rose)}
+h1{font:400 clamp(46px,11vw,78px)/.95 Georgia,'Times New Roman',serif;letter-spacing:-.055em;margin:16px 0}
+h1 em{font-weight:400;color:var(--rose)}.intro{font:italic 17px/1.65 Georgia,serif;color:var(--muted);max-width:420px;margin:20px 0 0}
+.hero-photo{width:100%;height:min(105vw,480px);object-fit:cover;object-position:center 42%;display:block;background:#e6dfd4}
+.caption{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:10px;margin:9px 0 34px}
+.note{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0 30px}
+.note p{font:17px/1.8 Georgia,'Times New Roman',serif;margin:0;white-space:pre-line}
+button{border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:99px;padding:11px 15px;font-size:11px;cursor:pointer}button:hover,button:focus-visible{background:var(--ink);color:white;outline:none}
+.status{font-size:11px;line-height:1.6;color:var(--muted);margin:10px 0 0}
+.gallery-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:38px 0 16px}.gallery-title h2{font:400 32px/1 Georgia,serif;letter-spacing:-.04em;margin:8px 0 0}.gallery-title span{font-size:10px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px;align-items:start}
+.gallery figure{margin:0;background:#fffefa;padding:9px 9px 15px;box-shadow:0 2px 8px rgba(42,35,27,.09);border:1px solid #eee9e0}
+.gallery figure:nth-child(3n + 2){transform:rotate(1.1deg)}.gallery figure:nth-child(3n + 1){transform:rotate(-.8deg)}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#e5dfd5}
+.gallery figcaption{font:italic 12px/1.4 Georgia,serif;color:#68635b;text-align:center;padding:11px 3px 0;min-height:29px}
+.letter{padding:30px 0 8px}.letter .label{margin-bottom:18px}.letter p{font:16px/1.85 Georgia,'Times New Roman',serif;margin:0 0 18px}.letter .closing{font-style:italic;color:var(--rose)}
+.end{text-align:center;padding:38px 0 24px}.heart{font-size:19px;color:var(--rose)}.end p{font:italic 19px/1.6 Georgia,serif;max-width:390px;margin:12px auto}.sign{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:440px){main{width:calc(100% - 28px)}.hero{padding-top:42px}.gallery{gap:12px 9px}.gallery figure{padding:6px 6px 11px}.gallery figcaption{font-size:11px;padding-top:9px}.note p,.letter p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.envelope-wrap{min-height:calc(100svh - 90px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 0 44px}
+.envelope-wrap .kicker{margin-bottom:22px}.envelope-scene{width:min(100%,390px);padding:14px 20px 4px;perspective:1000px}
+.envelope{position:relative;width:100%;aspect-ratio:1.55/1;background:#d8c7b7;box-shadow:0 15px 32px rgba(55,42,31,.12);isolation:isolate}
+.envelope-back{position:absolute;inset:0;background:#e4d6c8}
+.letter-peek{position:absolute;z-index:1;left:10%;right:10%;top:7%;height:84%;background:#fffdf8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#777067;font:italic 14px Georgia,serif;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .6s}
+.letter-peek strong{font:400 28px Georgia,serif;color:#8f6259}.envelope-front{position:absolute;z-index:3;inset:0;background:#d7c2af;clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%)}
+.envelope-flap{position:absolute;z-index:4;inset:0;background:#c8ae99;clip-path:polygon(0 0,100% 0,50% 64%);transform-origin:top;transition:transform .75s ease;backface-visibility:hidden}
+.wax-seal{position:absolute;z-index:5;left:50%;top:46%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#98675e;color:#f8eee6;display:grid;place-items:center;font-size:20px;box-shadow:0 2px 5px #a38a78}
+.envelope-title{font-size:clamp(39px,9vw,59px);margin:27px 0 0}.envelope-intro{font-size:15px;margin:14px 0 20px}.open-button{background:#292822;color:#fffdf9;border-color:#292822;padding:13px 22px;font-size:12px}.open-button:hover{background:#8f6259;border-color:#8f6259}.envelope-hint{font-size:10px;color:var(--muted);letter-spacing:.08em;margin:14px 0 0}
+.envelope-wrap.opening .envelope-flap{transform:rotateX(180deg)}.envelope-wrap.opening .wax-seal{opacity:0;transition:opacity .2s}.envelope-wrap.opening .letter-peek{transform:translateY(-42%);opacity:.2}
+.birthday-content{animation:appear .65s ease both}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span>a birthday note</span><span>for my best friend ♡</span></div>
+
+  <section class="envelope-wrap" id="envelopeWrap" aria-label="Birthday envelope">
+    <p class="kicker">A little something for you</p>
+    <div class="envelope-scene">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter-peek"><span>for</span><strong>Nurfadhleen</strong><span>♡</span></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="wax-seal">♡</div>
+      </div>
+    </div>
+    <h1 class="envelope-title">For you,<br><em>Nurfadhleen.</em></h1>
+    <p class="intro envelope-intro">A little note for one of my favourite people.</p>
+    <button id="openEnvelope" class="open-button" type="button">Open your letter ↗</button>
+    <p class="envelope-hint">take your time, this one’s yours.</p>
+  </section>
+
+  <div id="birthdayContent" class="birthday-content" hidden>
+  <header class="hero">
+    <div class="kicker">A little something for you</div>
+    <h1>Happy birthday,<br><em>Nurfadhleen.</em></h1>
+    <p class="intro">For all the little moments that became some of my favourite memories.</p>
+  </header>
+
+  <img class="hero-photo" src="photos/memory-01.jpg" alt="A favourite memory together" loading="eager">
+  <div class="caption"><span>one of my favourite people</span><span>♡ 01 / 14</span></div>
+
+  <section class="note">
+    <div class="label">Before anything else</div>
+    <p>Happy birthday to my favourite person, my bestfriend, and one of the best things life has ever given me. 🤍🎂
+
+I honestly don’t know how to put into words how grateful I am to have you in my life. Terima kasih sebab hadir dalam hidup aku, for being someone I can laugh with, share my stories with, and simply be myself around. Thank you for staying, even on days when I’m not the easiest person to understand.</p>
+  </section>
+
+  <div class="gallery-title"><div><div class="label">Little moments, kept forever</div><h2>Us, in pictures.</h2></div><span>01—14</span></div>
+  <section class="gallery" aria-label="Friendship photo gallery">
+    <figure><img src="photos/memory-02.jpg" loading="lazy" alt="A memory together"><figcaption>just us, as always.</figcaption></figure>
+    <figure><img src="photos/memory-03.jpg" loading="lazy" alt="A memory together"><figcaption>the familiar kind of happiness.</figcaption></figure>
+    <figure><img src="photos/memory-04.jpg" loading="lazy" alt="A memory together"><figcaption>another day to remember.</figcaption></figure>
+    <figure><img src="photos/memory-05.jpg" loading="lazy" alt="A memory together"><figcaption>my favourite kind of company.</figcaption></figure>
+    <figure><img src="photos/memory-06.jpg" loading="lazy" alt="A memory together"><figcaption>the little things.</figcaption></figure>
+    <figure><img src="photos/memory-07.jpg" loading="lazy" alt="A memory together"><figcaption>one for the memories.</figcaption></figure>
+    <figure><img src="photos/memory-08.jpg" loading="lazy" alt="A memory together"><figcaption>always glad it was you.</figcaption></figure>
+    <figure><img src="photos/memory-09.jpg" loading="lazy" alt="A memory together"><figcaption>the days we’ll talk about later.</figcaption></figure>
+    <figure><img src="photos/memory-10.jpg" loading="lazy" alt="A memory together"><figcaption>same us, different day.</figcaption></figure>
+    <figure><img src="photos/memory-11.jpg" loading="lazy" alt="A memory together"><figcaption>some moments stay with you.</figcaption></figure>
+    <figure><img src="photos/memory-12.jpg" loading="lazy" alt="A memory together"><figcaption>more memories, please.</figcaption></figure>
+    <figure><img src="photos/memory-13.jpg" loading="lazy" alt="A memory together"><figcaption>my built-in bestie.</figcaption></figure>
+    <figure><img src="photos/memory-14.jpg" loading="lazy" alt="A memory together"><figcaption>and many more to come.</figcaption></figure>
+  </section>
+
+  <section class="letter">
+    <div class="label">A letter, just for you</div>
+    <p>As you grow older, I hope life becomes kinder to you. Aku doa semoga segala urusan kau dipermudahkan, segala impian kau tercapai, and every little prayer you make in silence will find its way to you. I hope you’ll always find reasons to smile, even on the days when life feels a little too heavy.</p>
+    <p>Sometimes, I may not say it enough, but please know that your existence means so much to me. I’m proud of the person you’re becoming, and I’ll always be rooting for you, even when life takes us in different directions.</p>
+    <p>Aku tak tahu apa yang akan jadi pada kita in the future, how busy we’ll get, or how much our lives will change. But one thing I hope for is that no matter how far life takes us, we’ll never become strangers. I hope we’ll still have a little space in each other’s lives, to share our stories, celebrate our happiness, and be there for each other when things get hard.</p>
+    <p>Thank you for being more than just a friend. Thank you for being a part of my life that I’ll always be grateful for. If there’s one thing I wish for you, it’s that you’ll always be loved the way you deserve to be loved.</p>
+    <p>Happy birthday, bestie. Semoga tahun ini membawa lebih banyak kebahagiaan, ketenangan, rezeki and beautiful memories into your life. No matter what happens, I’ll always be thankful that out of all the people in this world, I got to know you and call you my bestfriend.</p>
+    <p>Here’s to more years of friendship, more memories, and a bond that I hope will last a lifetime.</p>
+    <p class="closing">I love you always. 🫶🏻🤍</p>
+  </section>
+
+  <section class="end">
+    <div class="heart">♡</div>
+    <p>No matter where life takes us, I hope we’ll always find our way back to each other.</p>
+    <div class="sign">your bestfriend, always</div>
+  </section>
+  <footer><span>made just for you</span><span>with love · always</span></footer>
+  </div>
+</main>
+<script>
+const envelopeWrap=document.getElementById('envelopeWrap');
+const openEnvelope=document.getElementById('openEnvelope');
+const birthdayContent=document.getElementById('birthdayContent');
+openEnvelope.addEventListener('click',()=>{
+  envelopeWrap.classList.add('opening');
+  openEnvelope.disabled=true;
+  openEnvelope.textContent='Opening your letter…';
+  window.setTimeout(()=>{
+    envelopeWrap.hidden=true;
+    birthdayContent.hidden=false;
+    window.scrollTo({top:0,behavior:'smooth'});
+  },650);
+});
+
+</script>
+</body>
+</html>
